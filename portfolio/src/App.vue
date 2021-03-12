@@ -1,60 +1,120 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+  <div id="app">
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">jérémie Herzog</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projets">projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">About</a>
+            </li>
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <v-spacer></v-spacer>
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Bienvenue sur mon Portfolio</div>
+          <br>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#projets">En Savoir plus</a>
+        </div>
+      </div>
+    </header>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
+    <!-- projets -->
+    <section id="projets">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Projets</h2>
+          </div>
+          <div class="card">
+            
+     <div class="container">
+      <h4><b>Hiking</b></h4>
+    <p>Projet Wordpress</p>
+      </div>
+    </div>
+        </div>
+      </div>
+    </section>
 
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-  </v-app>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <h3 class="section-subheading text-muted a-propos">Bonjour, Je m'appelle Jérémie Herzog. Je suis étudiant à l'université de Belfort-Montbéliard en 2ème année de MMI. Je suis passioné par le developpement web</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <a href="mailto:jeremie.herzog1@gmail.com" class="a-propos">Contactez-moi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright">Copyright &copy; Jérémie Herzog 2021</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
-  name: 'App',
-
+  name: 'app',
   components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
-};
+    HelloWorld
+  }
+}
 </script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+body {
+  background: black;
+}
+.a-propos{
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: Black;
+  text-decoration: none;
+}
+</style>
