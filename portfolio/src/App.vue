@@ -26,7 +26,7 @@
       </div>
     </nav>
 
-    <!-- Header -->
+<!-- Header -->
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
@@ -36,20 +36,40 @@
         </div>
       </div>
     </header>
-
     <!-- projets -->
     <section id="projets">
       <div class="container">
-        
-        <div class="row">
-          <div class="col-lg-12 text-center">
+
+          <div class="text-center">
             <h2 class="section-heading text-uppercase">Projets</h2>
           </div>
-          <div class="card">
-            
-     <div class="container">
-      <h4><b>Hiking</b></h4>
-    <p>Projet Wordpress</p>
+        <div class="row">
+
+          <div class="card1">
+     <div class="container card-projet1">
+        <h4><b><a href="http://hiking.jeremieherzog.fr/">Hiking</a></b></h4>
+          <p>Projet Wordpress</p>
+      </div>
+    </div>
+
+    <div class="card2">
+     <div class="container card-projet2">
+      <h4><b>BOSS</b></h4>
+    <p>Dev Spécifique, VueJS</p>
+      </div>
+    </div>
+<br>
+    <div class="card3">
+     <div class="container card-projet2">
+      <h4><b>Bureau 3D</b></h4>
+    <p>3Ds Max, Logiciel</p>
+      </div>
+    </div>
+
+        <div class="card4">
+     <div class="container card-projet2">
+      <h4><b>En cours...</b></h4>
+    <p>Application Cordova</p>
       </div>
     </div>
         </div>
@@ -87,13 +107,11 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
   }
 }
 </script>
